@@ -30,4 +30,8 @@ public class ProductService {
                 .build();
         return productRepository.save(product);
     }
+
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
+    }
 }
